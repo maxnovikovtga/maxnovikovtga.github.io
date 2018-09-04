@@ -15,7 +15,7 @@ window.onload = () => {
         fadeInElements.forEach( (el, i) => {
             const bottom_of_window = window.innerHeight,
                 bottom_of_object = el.getBoundingClientRect().top,
-                num = i%3 + 2;
+                num = i%5 + 4;
             el.style.transitionDelay = '.'+ num + 's';
 
             if (parseInt(bottom_of_window) > bottom_of_object) {
